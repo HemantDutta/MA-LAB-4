@@ -17,6 +17,8 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        Toast.makeText(this, "onCreate() Called", Toast.LENGTH_SHORT).show();
+
         try {
             Process process = Runtime.getRuntime().exec("logcat -d");
             BufferedReader bufferedReader = new BufferedReader(
